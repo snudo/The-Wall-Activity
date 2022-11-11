@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0 0 0;
+  padding: 0 0 0;
+}
+@font-face {
+  font-display: swap;
+  font-family: "inter-bold";
+  src: url("/assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: "inter-semibold";
+  src: url("/assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-display: swap;
+  font-family: "inter-regular";
+  src: url("/assets/fonts/Inter-Regular.ttf");
+}
+.hidden {
+  display: none !important;
+}
+textarea,
+input[type=text],
+input[type=email],
+input[type=password] {
+  border-radius: 2px;
+  border: 1px solid transparent;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font: 14px/16px "inter-regular";
+  height: 45px;
+  outline: none;
+  resize: none;
+}
+input[type=submit],
+button {
+  border-radius: 2px;
+  font: 14px/16px "inter-bold";
+  transition: .21s;
+  border: none;
+}
+input[type=submit]:hover,
+button:hover {
+  opacity: .8;
+}
+.input_error {
+  border: 1px  solid red !important;
+}
+#wrapper {
+  height: 100vh;
+  padding-bottom: 30px;
+  position: relative;
+}
+#wrapper nav {
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: rgba(100, 100, 100, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#wrapper nav span {
+  font: 22px/24px "inter-bold";
+}
+#wrapper nav div {
+  align-items: flex-end;
+  display: flex;
+}
+#wrapper nav div span {
+  font: 14px/16px "inter-semibold";
+}
+#wrapper nav div a {
+  color: #05aae1;
+  text-decoration: none;
+  font: 14px/20px "inter-bold";
+}
+#wrapper .form_template {
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin: 0 auto 0;
+  max-width: 380px;
+  padding: 40px 20px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  transform: translateY(-30%);
+}
+#wrapper .form_template h1 {
+  font: 22px/28px "inter-bold";
+}
+#wrapper .form_template label {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#wrapper .form_template label span {
+  display: block;
+  font: 14px/16px "inter-bold";
+  margin-bottom: 7px;
+}
+#wrapper .form_template label .form_inputs {
+  padding: 3px 10px;
+  width: 100%;
+}
+#wrapper .form_template input[type=submit] {
+  background-color: #05aae1;
+  border-radius: 2px;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  height: 45px;
+  width: 100%;
+}

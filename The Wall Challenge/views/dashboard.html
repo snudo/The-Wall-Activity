@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to wall challenge dashboard">
+    <title>Wall Challenge: Dashboard Page</title>
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <span>The Wall Challenge</span>
+            <div>
+                <span>Welcome, Anonymous</span>
+            </div>
+        </nav>
+        <div id="post_messages_section">
+            <div id="post_message_container">
+                <textarea name="message_textarea" id="message_input" rows="5" placeholder="Type your message"></textarea>
+                <button id="post_button" class="submit_reply_button" type="button" name="submit_message">Send Post</button>
+            </div>
+
+            <ul id="post_message_list">
+                <li id="clone_post" class="comment">
+                    <div class="delete_reply_container">
+                        <button class="reply_post" type="button" name="reply_post">Reply</button>
+                        <button class="delete_post" type="button" name="delete_post">Delete</button>
+                    </div>
+                    <div class="reply_input_container hidden">
+                        <textarea name="reply_message" rows="5" placeholder="Type your reply"></textarea>
+                        <button class="submit_reply_button" type="button" name="submit_reply_button">Submit Reply</button>
+                    </div>
+                    <ul class="reply_thread"></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form id="submit_reply_form" class="hidden" action="#" method="post">
+        <input id="submit_post_button" type="submit">
+    </form>
+    <script src="/assets/js/dashboard.js"></script>
+</body>
+</html>

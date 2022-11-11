@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up now for wall challenge">
+    <title>Wall Challenge: Signup Page</title>
+    <link rel="stylesheet" href="/assets/css/signup.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <span>The Wall Challenge</span>
+            <div>
+                <a href="/views/login.html">Log In</a>
+            </div>
+        </nav>
+        <form id="signup_form" class="form_template" action="#" method="post">
+            <label>
+                <span>Full Name</span>
+                <input class="form_inputs" type="text" name="full_name_input" id="full_name_input">
+            </label>
+            <label>
+                <span>Email</span>
+                <input class="form_inputs" type="email" name="email_input" id="email_input">
+            </label>
+            <label>
+                <span>Password</span>
+                <input class="form_inputs" type="password" name="password_input" id="password_input">
+            </label>
+            <label>
+                <span>Confirm Password</span>
+                <input id="confirm_password_input" class="form_inputs" type="password" name="confirm_password_input">
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="/assets/js/signup.js"></script>
+</body>
+</html>

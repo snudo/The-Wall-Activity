@@ -1,0 +1,110 @@
+@import url("../less/global.less");
+
+#clone_post{
+    display: none;
+}
+#post_messages_section{
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin: 150px auto 0;
+    max-width: 745px;
+    padding: 50px;
+    #post_message_container{
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        textarea{
+            height: 100%;
+            margin: 0 0 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        button{
+            background-color: #05aae1;
+            border: none;
+            color: #FFF;
+            cursor: pointer;
+            height: 45px;
+            padding: 0 30px 0;
+            width: 200px;
+        }
+    }
+    #post_message_list{
+        margin: 60px 0 0 0;
+        li{
+            border-radius: 2px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            list-style: none;
+            margin: 0 0 17px;
+            padding: 10px 10px;
+            p{
+                font: 14px/16px "inter-regular";
+            }
+            span{
+                font: 14px/16px "inter-semibold";
+            }
+            .delete_reply_container{
+                display: flex;
+                button{
+                    background-color: transparent;
+                    cursor: pointer;
+                    font: 14px/16px "inter-semibold";
+                    height: 20px;
+                    border: none;
+                    margin: 5px 15px 0 0;
+                    &:first-child{
+                        color: green;
+                    }
+                    &:nth-child(2){
+                        color: blue;
+                    }
+                    &:last-child{
+                        color: red;
+                    }
+                }
+            }
+            .reply_input_container{
+                align-items: flex-end;
+                display: flex;
+                flex-direction: column;
+                .submit_reply_button{
+                    background-color: #e5e5e5;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    font: 14px/16px "inter-semibold";
+                    margin: 5px 0 0;
+                    padding:  3px 7px;
+                    width: 115px;
+                }
+            }
+            textarea{
+                height: 100%;
+                margin: 15px 0 0;
+                padding: 10px;
+                width: 100%;
+            }
+            .reply_thread{
+                margin: 10px 0 0;
+                padding: 0 0 0 35px;
+                li{
+                    list-style: none;
+                    position: relative;
+                    &:before{
+                        background: url("../images/reply-icon.png") no-repeat;
+                        background-size: contain;
+                        content: "";
+                        display: block;
+                        height: 25px;
+                        left: -32px;
+                        position: absolute;
+                        transform: rotate(180deg);
+                        width: 25px;
+                    }
+                    >p{
+                        font: 14px/16px "inter-regular"
+                    }
+                }
+            }
+        }
+    }
+}
